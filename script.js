@@ -164,7 +164,7 @@ document.getElementById("countrySubmit").addEventListener("click", function (eve
                 result += "<td>" + element.date + "</td>";
                 result += "<td>" + element.localName + "</td>";
                 result += "<td>" + element.name + "</td>";
-                result += "<td>" + element.global + "</td>";
+                result += "<td>" + (element.global ? "Yes" : "No") + "</td>";
                 result += "<td>" + element.types + "</td>";
                 result += "</tr>";
             }
