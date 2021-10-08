@@ -1,0 +1,157 @@
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("./images/hourglass-620397_960_720.webp");
+}
+
+form {
+    text-align:  center;
+}
+
+#enterCountry {
+    margin: 12px;
+    font-size: 1.1em;
+    color: rgb(142, 26, 250);
+    font-weight: bold;
+}
+
+#userform input {
+    padding: 0;
+    margin-bottom: 10px;
+    width: 30%;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+#countrySubmit {
+    background-color: rgb(87, 158, 123);
+    color: #fcfdda;
+    border-radius: 5px;
+}
+
+#countrySubmit:hover {
+    background-color: violet;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    color: rgb(236, 113, 31);
+    text-shadow: 1px 1px 2px lightsalmon;
+}
+
+h2, h3 {
+    color: rgb(83, 160, 76);
+}
+
+.section-one {
+    margin: 2%;
+    padding: 1em;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #daf5fd;
+    border-color: rgb(108, 76, 160);
+}
+
+#main-weather {
+    width:50%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row h3, p {
+    padding-left: 3%;
+}
+
+.box {
+    width: 10%;
+    height: 20em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(101, 101, 255);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 8px;
+}
+
+.box h3 {
+    color: rgba(181, 102, 255, 0.884);
+}
+
+.box p, .square p {
+    margin: 0;
+    padding: 0;
+    font:10px;
+    color:darkslategray;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color:rgb(28, 28, 209);
+    size:10px;
+}
+
+.square {
+    width: 20%;
+    height: 4em;
+}
+
+.square h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.error-message {
+    color:crimson;
+    font-weight: bold;
+}
+
+.unitlabel {
+    color:darkslategray;
+    font-weight: bold;
+}
+
+.unitselect {
+    display: inline-block;
+    margin-left: 3em; color:darkorange;
+}
+
+table { 
+    border-collapse: collapse;
+    width:100%;
+}
+
+tr {
+    border-bottom: 2px solid gray;
+    margin-bottom: 3px;
+}
+
+th {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkviolet;
+}
+
+td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 1023px) {
+    .box h3, h4, p {
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    
+}
