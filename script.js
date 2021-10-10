@@ -146,8 +146,7 @@ document.getElementById("countrySubmit").addEventListener("click", function (eve
                 return response.json();
             }
             else{
-                document.getElementById("holidayResults").innerHTML = "";
-                "Failed to get the response! Code: " + response.status;
+                throw new Error(response.status);
             }
         })
         .then(function (json) {
@@ -169,5 +168,8 @@ document.getElementById("countrySubmit").addEventListener("click", function (eve
                 result += "</tr>";
             }
             document.getElementById("holidayResults").innerHTML = result;
+        }).catch(function (error) {
+            document.getElementById("holidayResults").innerHTML = "";
+            document.getElementById("holidayHead").innerHTML = "Failed to get the response! Code: " + error;
         });
 });
